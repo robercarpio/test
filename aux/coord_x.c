@@ -6,10 +6,11 @@
 /*   By: rcarpio- <rcarpio-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/26 19:13:42 by rcarpio-          #+#    #+#             */
-/*   Updated: 2025/02/26 19:23:14 by rcarpio-         ###   ########.fr       */
+/*   Updated: 2025/02/26 19:25:38 by rcarpio-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "aux.h"
 
 int   coord_x(char **map,char c)
 {

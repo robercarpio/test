@@ -6,9 +6,11 @@
 /*   By: rcarpio- <rcarpio-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/26 19:15:09 by rcarpio-          #+#    #+#             */
-/*   Updated: 2025/02/26 19:15:45 by rcarpio-         ###   ########.fr       */
+/*   Updated: 2025/02/26 19:26:31 by rcarpio-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "aux.h"
 
 int   coord_y(char **map,char c)
 {
