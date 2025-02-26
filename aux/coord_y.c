@@ -1,35 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   only_chars_allowed.c                               :+:      :+:    :+:   */
+/*   coord_y.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rcarpio- <rcarpio-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/26 18:09:54 by rcarpio-          #+#    #+#             */
-/*   Updated: 2025/02/26 18:09:55 by rcarpio-         ###   ########.fr       */
+/*   Created: 2025/02/26 19:15:09 by rcarpio-          #+#    #+#             */
+/*   Updated: 2025/02/26 19:15:45 by rcarpio-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "aux.h"
-
-int	only_chars_allowed(char *str, char *allow)
+int   coord_y(char **map,char c)
 {
-	int	i;
-	int	b;
+    int   x;
+    int   y;
 
-	while(*str)
-	{
-		b = 0;
-		i = 0;
-		while(allow[i] && b != 1)
-		{
-			if(*str == allow[i] || *str == '\n')
-				b = 1;
-			i++;
-		}
-		if (b == 0)
-			return(0);
-		str++;
-	}
-	return(b);
+    y = 0;
+    while (y < map_height(map))
+    {
+        x = 0;
+        while (x < line_len(map[y]))
+        {
+            if (map[y][x] == c)
+                return (y);
+            x++;
+        }
+        y++;
+    }
+    return (-1);
 }

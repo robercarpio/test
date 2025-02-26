@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   init.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rcarpio- <rcarpio-@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/02/26 18:10:34 by rcarpio-          #+#    #+#             */
+/*   Updated: 2025/02/26 19:17:49 by rcarpio-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "print_map.h"
 
 void	init_structs(s_map *map,s_player *player,s_game *game, char *route)
@@ -15,6 +27,8 @@ void	init_structs(s_map *map,s_player *player,s_game *game, char *route)
 	map->size_y = map_height(a_map);
 	map->player = *player;
 	map->alloc = a_map;
+	map->px_exit= coord_x(a_map,'E');
+	map->py_exit= coord_y(a_map,'E');
 	game->mlx = mlx_init();
 	game->player = *player;
 	game->map = *map;

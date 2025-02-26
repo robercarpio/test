@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rcarpio- <rcarpio-@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/02/26 18:10:55 by rcarpio-          #+#    #+#             */
+/*   Updated: 2025/02/26 18:11:40 by rcarpio-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "so_long.h"
 #include <stdio.h>
 #include "./print_map/print_map.h"
@@ -11,7 +23,7 @@ int main(int argc, char *argv[])
     // s_map   map;
     // s_player    player;
     // s_game  game;
-
+    
     // print_map(game);
     // mlx_key_hook(game.window, key_hook, &game);
     // mlx_loop(game.mlx);

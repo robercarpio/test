@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   events.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rcarpio- <rcarpio-@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/02/26 18:10:20 by rcarpio-          #+#    #+#             */
+/*   Updated: 2025/02/26 18:30:39 by rcarpio-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "events.h"
 
 int key_hook(int keycode, s_game *game)
@@ -20,7 +32,6 @@ int key_hook(int keycode, s_game *game)
 void    close_game(s_game *game, char *error)
 {
     print_error(error);
-    //free(game->map.alloc);
     mlx_destroy_image(game->mlx,game->character);
     mlx_destroy_image(game->mlx,game->exit);
     mlx_destroy_image(game->mlx,game->collectible);

@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   so_long.h                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rcarpio- <rcarpio-@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/02/26 18:10:59 by rcarpio-          #+#    #+#             */
+/*   Updated: 2025/02/26 19:13:37 by rcarpio-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef SO_LONG_H
 # define SO_LONG_H
 
@@ -19,6 +31,8 @@ typedef struct s_map {
 	int	n_collectibles;
 	int	size_x;
 	int	size_y;
+	int	px_exit;
+	int	py_exit;
 	s_player player;
 	char	**alloc;
 } s_map;

@@ -30,7 +30,7 @@ char	*get_next_line(int fd)
 		else
 		{
 			temp = ft_strjoin(storage, buffer);
-			if (!temp)  // Evitar acceso a memoria liberada si ft_strjoin falla
+			if (!temp)
 			{
 				free(storage);
 				free(buffer);

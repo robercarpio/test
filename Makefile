@@ -22,6 +22,8 @@ SRCS = main.c \
        aux/str_join.c \
        aux/count_char.c \
        aux/print_error.c \
+       aux/coord_x.c \
+       aux/coord_y.c \
        gnl/get_next_line.c \
        gnl/get_next_line_utils.c \
        print_map/init.c \

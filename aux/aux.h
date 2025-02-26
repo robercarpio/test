@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   aux.h                                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rcarpio- <rcarpio-@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/02/26 18:10:17 by rcarpio-          #+#    #+#             */
+/*   Updated: 2025/02/26 19:16:04 by rcarpio-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef AUX_H
 # define AUX_H
 
@@ -31,5 +43,7 @@ int	ber_file(char *str);
 char	*str_join(char *s1, char *s2);
 int	count_char(char **map,char c);
 void	print_error(char *error);
+int   coord_y(char **map,char c);
+int   coord_x(char **map,char c);
 
 #endif
